@@ -1,0 +1,55 @@
+strace: Process 20014 attached
+strace: Process 20015 attached
+strace: Process 20444 attached
+benchmark.sh: строка 18: /proc/sys/vm/drop_caches: Отказано в доступе
+strace: Process 20446 attached
+strace: Process 20475 attached
+% time     seconds  usecs/call     calls    errors syscall
+------ ----------- ----------- --------- --------- ----------------
+ 55,61    4,823410      482341        10         5 wait4
+ 35,24    3,056260          59     51211           write
+  8,59    0,745381          14     51233           read
+  0,39    0,033416       16708         2           unlinkat
+  0,04    0,003781          12       306       189 openat
+  0,02    0,002066          14       143           mmap
+  0,02    0,001801         300         6           execve
+  0,01    0,001170          11       105        75 newfstatat
+  0,01    0,001112           9       114           fstat
+  0,01    0,001070         214         5           clone
+  0,01    0,000981           7       136           close
+  0,00    0,000429           9        45           rt_sigprocmask
+  0,00    0,000357          17        21           mprotect
+  0,00    0,000301         301         1           sync
+  0,00    0,000218           3        60           rt_sigaction
+  0,00    0,000170           8        19           brk
+  0,00    0,000169          84         2         1 mkdir
+  0,00    0,000135           7        17         7 access
+  0,00    0,000133          22         6           munmap
+  0,00    0,000095          10         9         8 ioctl
+  0,00    0,000088           7        12           pread64
+  0,00    0,000080           7        11           geteuid
+  0,00    0,000078           7        11         1 lseek
+  0,00    0,000076           6        11           getuid
+  0,00    0,000072           6        11           getegid
+  0,00    0,000070           6        11           getgid
+  0,00    0,000059           9         6           set_tid_address
+  0,00    0,000052           8         6           arch_prctl
+  0,00    0,000052           6         8           prlimit64
+  0,00    0,000051           8         6           futex
+  0,00    0,000050          10         5           rt_sigreturn
+  0,00    0,000048           8         6           rseq
+  0,00    0,000046           6         7           dup2
+  0,00    0,000045           7         6           getrandom
+  0,00    0,000044           5         8         1 fcntl
+  0,00    0,000042           3        11           set_robust_list
+  0,00    0,000035          17         2           getdents64
+  0,00    0,000021           2         8           getpid
+  0,00    0,000021           7         3           getppid
+  0,00    0,000010          10         1           fstatfs
+  0,00    0,000008           8         1           uname
+  0,00    0,000008           8         1           getpgrp
+  0,00    0,000000           0         1           chdir
+  0,00    0,000000           0         2           umask
+  0,00    0,000000           0         2         2 statfs
+------ ----------- ----------- --------- --------- ----------------
+100,00    8,673511          83    103608       289 total
